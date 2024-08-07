@@ -42,14 +42,21 @@ o	Implemented to manage services within the application, promoting modularity an
 o	Utilized for querying the database in a strongly-typed manner, making data operations more readable and maintainable.
 
 Project Functionality
+
 •	User Interaction: Users interact with the application through a web browser, accessing various pages to manage their movie collection.
+
 •	Data Management: The application manages data using Entity Framework Core, providing efficient data access and manipulation.
+
 •	Navigation: The application includes a landing page, listing page, and detailed views for each movie, with intuitive navigation menus for a seamless user experience.
+
 •	Error Handling: The application includes error handling mechanisms to provide user-friendly error messages and maintain application stability.
 Deployment
+
 •	The application is deployed on cloud platform, using the free tier for hosting the web application and database.
 Challenges and Solutions
+
 •	Database Configuration: Configuring DbContext with a constructor accepting DbContextOptions to ensure proper integration with ASP.NET Core's dependency injection system.
+
 •	Sorting and Filtering: Implementing sorting logic using LINQ to dynamically sort the movie list based on user preferences.
 
 
@@ -59,7 +66,9 @@ ASP.NET Core MVC
 •	Model-View-Controller (MVC) Architecture: ASP.NET Core MVC is a web development framework that follows the MVC pattern, which separates the application into three main components:
 
 o	Model: Represents the application's data and business logic. In your project, the Movie class serves as the model, encapsulating movie-related data and validation logic.
+
 o	View: Handles the display of information to the user. Razor Views are used to render the UI, allowing server-side code to generate dynamic HTML content.
+
 o	Controller: Acts as an intermediary between the model and the view. It processes incoming requests, performs operations using the model, and selects a view to render the response.
 By using MVC, the application achieves a clean separation of concerns, making it easier to manage, test, and scale.
 
@@ -73,15 +82,21 @@ Bootstrap
 •	Responsive Design: By using Bootstrap's grid system and responsive utilities, the application automatically adjusts its layout and appearance based on the screen size, providing an optimal viewing experience for users on desktops, tablets, and smartphones.
 
 Razor Views
+
 •	Dynamic Web Pages: Razor is a view engine in ASP.NET Core that allows developers to embed server-side C# code within HTML markup. This enables the creation of dynamic web pages that can render data and respond to user interactions in real-time.
+
 •	Seamless Integration: Razor syntax is simple and expressive, allowing developers to mix HTML and C# code fluidly. It is especially useful for rendering data from the model and controlling the flow of the page.
 
 Dependency Injection
+
 •	Service Management: Dependency Injection (DI) is a design pattern that allows the application to manage the dependencies of its components. In ASP.NET Core, DI is built into the framework and is used to inject services, such as DbContext and logging services, into controllers and other classes.
+
 •	Modularity and Testability: By using DI, the application promotes loose coupling between components, making it easier to replace or extend functionality. It also improves testability by allowing mock dependencies to be injected during unit testing.
 
 LINQ Queries
+
 •	Expressive Query Syntax: LINQ provides a consistent query syntax across different data sources, including collections, databases, and XML. It allows developers to write queries in a declarative style, similar to SQL but integrated into C#.
+
 •	Strongly-Typed Operations: LINQ ensures type safety by checking query expressions at compile-time, reducing runtime errors and improving code reliability. This makes it easier to refactor and maintain the code over time.
 
 
