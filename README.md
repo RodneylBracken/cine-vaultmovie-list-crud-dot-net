@@ -1,5 +1,7 @@
 Project Overview
 The project is a web application named CineVault designed to manage a movie collection. It allows users to create, read, update, delete, and list movies in the collection, with additional feature for sorting. The application is built using ASP.NET Core MVC and Entity Framework Core, providing a robust and scalable framework for web development.
+
+
 Key Features
 1.	CRUD Operations:
 o	Create: Users can add new movies to the collection, specifying details such as title, format, length, release year, and rating.
