@@ -1,0 +1,123 @@
+html {
+  font-size: 14px;
+}
+a {
+    color: #fff;
+    text-decoration:none;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/*body {
+  margin-bottom: 60px;
+}*/
+
+body {
+    margin-bottom: 60px;
+    background-image: url('../images/movie-poster1.jpg'); /* Replace with your image path */
+    background-size: cover; /* Adjusts the image to cover the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+}
+
+/*.inner-content {
+    background-color: white;
+}*/
+
+.inner-content {
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+    backdrop-filter: blur(17px); /* Adjust the blur radius as needed */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    padding: 10px 25px;
+}
+
+
+.btn-main a, .btn.btn-default a, .btn.btn-default-1, .btn.btn-default-edit, .btn.btn-default {
+    display: inline-block;
+    width: fit-content;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: all 0.4s ease;
+    padding: 6px 24px;
+    color: #fff;
+    background: green;
+}
+
+    .btn-main:first-child a:hover, .btn.btn-default a:hover, .btn.btn-default-1:hover, .btn.btn-default-edit a:hover, .btn.btn-default:hover {
+        background: #fff;
+        color: green !important;
+        border: 1px solid green;
+        transition: all 0.4s ease;
+        text-decoration: unset;
+    }
+
+.btn-main:nth-child(2) a, .btn.btn-back a {
+    display: inline-block;
+    width: fit-content;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: all 0.4s ease;
+    padding: 6px 24px;
+    color: #fff;
+    background: blue;
+}
+
+.btn-main:nth-child(2) a:hover, .btn.btn-back a:hover {
+    background: #fff;
+    color: blue !important;
+    border: 1px solid blue;
+    transition: all 0.4s ease;
+    text-decoration: unset;
+}
+
+.btn-main:nth-child(3) a, .btn.btn-danger {
+    display: inline-block;
+    width: fit-content;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: all 0.4s ease;
+    padding: 6px 24px;
+    color: #fff;
+    background: red;
+}
+
+.btn-main:nth-child(3) a:hover, .btn.btn-danger:hover {
+    background: #fff;
+    color: red !important;
+    border: 1px solid red;
+    transition: all 0.4s ease;
+    text-decoration: unset;
+}
+div#navbarNav {
+    justify-content: end;
+}
+a.nav-link {
+    font-size: 18px;
+}
+nav a.navbar-brand {
+    color: rgba(0, 0, 0, .9);
+    font-size: 30px;
+}
+table thead tr th a {
+    color: #000;
+
+}
+.table td {
+    font-size: 17px;
+    font-weight: 600;
+}
